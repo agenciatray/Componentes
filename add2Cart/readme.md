@@ -4,8 +4,8 @@ A função add2Cart possibilita inserir um produto ao carrinho diretamente da ho
 
 ## Como usar
 
-1. Adicione o arquivo `add2Cart.js` ao seu projeto.
-2. Insira os elementos presentes no arquivo `index.html`. Alguns elementos são opcionais, como segue:
+1. Adicione o arquivo [add2Cart.js](https://github.com/agenciatray/Componentes/blob/master/add2Cart/add2Cart.js) ao seu projeto.
+2. Insira os elementos presentes no arquivo [index.html](https://github.com/agenciatray/Componentes/blob/master/add2Cart/index.html). Alguns elementos são opcionais, como segue:
     1. Botão menos(opcional)
     2. Botão mais(opcional)
     3. Input de Quantidade(opcional)
