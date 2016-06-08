@@ -1,0 +1,38 @@
+<!-- OPTIONAL -->
+
+<div class="addCartModal" id="addCartModal">
+    <span class="text">Adicionado ao carrinho</span>
+</div>
+
+<style type="text/css">
+    .addCartModal.active{
+        top: 10px;
+    }
+    .addCartModal{
+        position: fixed;
+        width: 300px;
+        height: 70px;
+        background: #dff0d8;
+        top: -90px;
+        border: 1px solid #5FA741;
+        border-bottom: 3px solid #5FA741;
+        left: calc(50% - 150px);
+        text-align: center;
+        -moz-border-radius: 10px;
+        border-radius: 10px;
+        z-index: 1;
+        -webkit-transition-duration: 0.2s;
+        -moz-transition-duration: 0.2s;
+        -ms-transition-duration: 0.2s;
+        -o-transition-duration: 0.2s;
+        transition-duration: 0.2s;
+    }
+    
+    .addCartModal .text {
+        font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+        font-weight: 700;
+        line-height: 70px;
+        color: #254E14;
+        font-size: 16px;
+    }
+</style>
