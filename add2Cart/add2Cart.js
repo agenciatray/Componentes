@@ -5,9 +5,11 @@ function add2Cart() {
     var quatityInput = document.getElementsByClassName('add2_quatity')
     var addButton = document.getElementsByClassName('add2_addCart');
     var showSucess = false;
+    var showSucessElement = false;
     
-    this.activeSuccess = function(){
+    this.activeSuccess = function(el){
         showSucess = true;
+        showSucessElement = el;
     }
     
     /* global function*/
@@ -44,10 +46,9 @@ function add2Cart() {
     });
 
     function showDialog(){
-        var addCartModal = document.getElementById("addCartModal");
-        addClass(addCartModal, 'active');
+        addClass(showSucessElement, 'active');
         setTimeout(function(){
-            removeClass(addCartModal, 'active');
+            removeClass(showSucessElement, 'active');
         }, 2000);
     }
 
@@ -80,6 +81,3 @@ function add2Cart() {
         });
     });
 }
-
-var add2Cart = new add2Cart();
-add2Cart.activeSuccess($('.addCartModal')); //(OPTIONAL)

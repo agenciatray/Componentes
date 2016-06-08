@@ -4,3 +4,7 @@
     <button class="add2_plus">Mais</button>
     <button class="add2_addCart" data-product-id="{{ product.id }}">Adicionar ao carrinho</button>
 </div>
+<script>
+    var add2Cart = new add2Cart();
+    add2Cart.activeSuccess($('.addCartModal')); //(OPTIONAL)
+</script>
