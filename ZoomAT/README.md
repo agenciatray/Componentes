@@ -4,7 +4,7 @@ Plugin de zoom interno
 
 ## Como usar
 
-Fazer a chamada do [zoomAT.min.js](#) e incluir o arquivo css do [zoomAT.min.css](#).
+Fazer a chamada do `zoomAT.min.js` e incluir o arquivo `zoomAT.min.css`.
 
 **CDN**
 ```
