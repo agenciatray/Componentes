@@ -8,8 +8,8 @@ Fazer a chamada do [zoomAT.min.js](#) e incluir o arquivo css do [zoomAT.min.css
 
 **CDN**
 ```
-https://rawgit.com
-https://rawgit.com
+https://github.com/agenciatray/Componentes/blob/master/ZoomAT/dist/zoomAT.min.css
+https://github.com/agenciatray/Componentes/blob/master/ZoomAT/dist/zoomAT.min.js
 ```
 
 Inclua em seu HTML o seguinte código
