@@ -1,36 +1,45 @@
 function zoomAT(element) {
-    this.box = element;
-    this.lazy = $('.box-zoom .box-zoom-lazy');
+    var box = element;
     jq = jQuery;
-    
-    //__constructor
-    var lazy_image = jq(this.lazy).attr('src');
-    jq(element).css('background-image', "url('"+lazy_image+"')");
-    jq(this.lazy).remove();
-    
-    // Change image
-    this.setImage = function(urlImage) {
-        jq(element).css('background-image', "url('"+urlImage+"')");
-    }
-    
-    // Changes level of zoom
-    jq(this.box).click(function(){
-        jq(element).toggleClass('zoom-plus');
+    var lazy = jq(element).find('.box-zoom-lazy');
+    var parentOffset = jq(box).offset();
+    var boxWidth = 100 / jq(box).width();
+    var boxHeight = 100 / jq(box).height();
+    var spaceLeft = parentOffset.left;
+    var spaceTop = parentOffset.top;
+        
+    //initial
+    var lazy_image = jq(lazy).attr('src');
+    jq(box).css('background-image', "url('" + lazy_image + "')");
+    jq(lazy).remove();
+
+    //on page resize recalcule sizes fixeds
+    $(window).resize(function() {
+        var parentOffset = jq(box).offset();
+        boxWidth = 100 / jq(box).width();
+        boxHeight = 100 / jq(box).height();
+        spaceLeft = parentOffset.left;
+        spaceTop = parentOffset.top;
+        console.log(spaceLeft);
     });
-    
-    // OnHover show zoom
-    jq(element).hover(function() {
-        jq(element).addClass('active');
-        jq(element).mousemove(function(e) {
-            var parentOffset = jq(element).parent().offset();
-            var relX = (100/jq(element).width())*e.pageX - parentOffset.left;
-            var relY = (100/jq(element).height())*e.pageY - parentOffset.top;
-            console.log('X: '+relX);
-            console.log('Y: '+relY);
-            jq(element).css('background-position', relX+'% '+relY+'%');
+
+    this.setImage = function(urlImage) {
+        jq(box).css('background-image', "url('" + urlImage + "')");
+    }
+
+    jq(box).click(function() {
+        jq(this).toggleClass('zoom-plus');
+    });
+
+    jq(box).hover(function() {
+        jq(box).addClass('active');
+        jq(this).mousemove(function(e) {
+            var relX = boxWidth * (e.pageX - spaceLeft);
+            var relY = boxHeight * (e.pageY - spaceTop);
+            jq(this).css('background-position', relX + '% ' + relY + '%');
         });
     }, function() {
-        jq(element).removeClass('active');
-        jq(element).css('background-position', '50% 50%');
+        jq(box).removeClass('active');
+        jq(box).css('background-position', '50% 50%');
     });
 }
