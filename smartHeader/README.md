@@ -8,8 +8,7 @@ Adicione o script `smartHeader.js` ao seu site
 
 **CDN**
 ```
-<link rel="stylesheet" href="https://cdn.rawgit.com/agenciatray/Componentes/master/ZoomAT/dist/zoomAT.min.css" type="text/css" />
-<script type="text/javascript" src="https://cdn.rawgit.com/agenciatray/Componentes/master/ZoomAT/dist/zoomAT.min.js?v=1.1"></script>
+<script type="text/javascript" src="https://raw.githubusercontent.com/agenciatray/Componentes/master/smartHeader/dist/smartHeader.min.js"></script>
 ```
 
 Após, você deve instanciar o plugin
