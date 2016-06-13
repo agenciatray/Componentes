@@ -7,7 +7,7 @@ Exibição de topo inteligente. O topo é removido quando o usuário desce na p�
 Adicione o script `smartHeader.js` ao seu site
 
 **CDN**
-```
+```html
 <script type="text/javascript" src="https://raw.githubusercontent.com/agenciatray/Componentes/master/smartHeader/dist/smartHeader.min.js"></script>
 ```
 
