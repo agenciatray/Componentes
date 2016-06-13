@@ -9,7 +9,7 @@ Fazer a chamada do `zoomAT.min.js` e incluir o arquivo `zoomAT.min.css`.
 **CDN**
 ```html
 <link rel="stylesheet" href="https://cdn.rawgit.com/agenciatray/Componentes/master/ZoomAT/dist/zoomAT.min.css" type="text/css" />
-<script type="text/javascript" src="https://cdn.rawgit.com/agenciatray/Componentes/master/ZoomAT/dist/zoomAT.min.js?v=11"></script>
+<script type="text/javascript" src="https://cdn.rawgit.com/agenciatray/Componentes/master/ZoomAT/dist/zoomAT.min.js?v=1.1"></script>
 ```
 
 Inclua em seu HTML o seguinte código
