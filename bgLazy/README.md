@@ -27,7 +27,7 @@ Não se esqueça de colocar `style="background: #08324a;"` em sua div, com a cor
 Depois dos elemento configurados, voce deve instânciar a função, como no exemplo a seguir:
 
 ```js
-backgroundLazy();
+bgLazy();
 ```
 
 #### Opcional
@@ -35,7 +35,7 @@ backgroundLazy();
 Caso não queira usar a classe `.bglazy`, é possível usar outra classe, chamando a função da seguinte forma:
 
 ```js
-backgroundLazy('bgtest');
+bgLazy('bgtest');
 ```
 
 ## Exemplo
