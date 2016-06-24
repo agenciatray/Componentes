@@ -1,4 +1,4 @@
-# bgLazy.js 
+# bgLazy.js ![VanillaJS](http://vanilla-js.com/assets/button.png)
 
 Atraso de carregamento de imagens em backgrounds
 
@@ -41,5 +41,3 @@ bgLazy('bgtest');
 ## Exemplo
 
 [Demonstração](http://codepen.io/ezanattatray/pen/XKpjVa)
-
-![VanillaJS](http://vanilla-js.com/assets/button.png)
