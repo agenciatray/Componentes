@@ -41,3 +41,5 @@ bgLazy('bgtest');
 ## Exemplo
 
 [Demonstração](http://codepen.io/ezanattatray/pen/XKpjVa)
+
+![VanillaJS](http://vanilla-js.com/assets/button.png)
