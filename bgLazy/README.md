@@ -2,7 +2,7 @@
 
 Atraso de carregamento de imagens em backgrounds
 
-[Demo](http://codepen.io/ezanattatray/pen/XKpjVa)
+[Demonstração](http://codepen.io/ezanattatray/pen/XKpjVa)
 
 ## Como usar
 
@@ -10,7 +10,7 @@ Adicione o script `bgLazy.js` ao seu site
 
 **CDN**
 ```html
-<script type="text/javascript" src=""></script>
+<script type="text/javascript" src="https://cdn.rawgit.com/agenciatray/Componentes/master/bgLazy/dist/bgLazy.min.js"></script>
 ```
 ### Configurando o HTML
 
